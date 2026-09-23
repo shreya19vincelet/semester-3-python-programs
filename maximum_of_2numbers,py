@@ -1,0 +1,10 @@
+def maximum(a,b):
+    if(a>b):
+        return a
+    else:
+        return b
+num1=int(input("enter the 1st number"))
+num2=int(input("enter the 2nd number"))
+maximum_number=maximum(num1,num2)
+print("the maximum number is ",maximum_number)
+print("program end")
