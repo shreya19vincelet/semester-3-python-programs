@@ -1,0 +1,22 @@
+import re
+string1=input("enter the desired string ")
+matches=re.findall(r"a.c",string1)#only 1 charachter in the string between a and c
+print(matches)
+string2=input("enter the second desired string ")
+startmatch=re.match(r"^Hello",string2)
+print(startmatch.group())
+endsearch=re.search(r"World$",string2)
+print(endsearch.group())
+string3=input("enter the  third desired string ")
+repetition=re.findall(r"ab*",string3)
+print(repetition)
+repetition_atleast_once=re.findall(r"ab+",string3)
+print(repetition_atleast_once)
+string4=input("enter the fourth desired string to implement ? in regular function")
+p=re.findall(r"hell?o",string4)#the most possibility character is given as the input 
+print(p)
+string5=input("enter the fifth desired string to implement exact repition symbol")
+found_repetition=re.findall(r"\d{2}",string5)
+print(found_repetition)
+found_repetition_in_range=re.findall(r"\d{1,4}",string5)
+print(found_repetition_in_range)
